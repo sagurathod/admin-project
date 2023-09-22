@@ -1,0 +1,50 @@
+<h2 mat-dialog-title>Add Category</h2>
+
+<div mat-dialog-content>
+  
+  <form [formGroup]="productForm" (ngSubmit)="save()">
+    <div class="my-container">
+      <div class="example-container">
+          <label for="id1">Category</label><br>
+          <mat-form-field appearance="fill" class="width">
+              <mat-label>Enter category name</mat-label>
+              <input matInput id="id1" formControlName="category">
+          </mat-form-field>
+      </div>
+      <div class="example-container">
+          <label for="id2">Description</label><br>
+          <mat-form-field appearance="fill" class="width">
+              <mat-label>Write product description</mat-label>
+              <input matInput id="id2" formControlName="description">
+          </mat-form-field>
+      </div>
+      <div class="example-container">
+          <label for="id3">Created At</label><br>
+          <mat-form-field appearance="fill" class="width">
+              <mat-label>Enter created date</mat-label>
+              <input matInput id="id3" formControlName="createdAt">
+          </mat-form-field>
+      </div>
+  
+      <!-- <div>
+          <div class="example-container">
+              <label for="id2">Password</label><br>
+              <mat-form-field appearance="fill" class="width">
+                  <mat-label>Enter your password</mat-label>
+                  <input matInput [type]="hide ? 'password' : 'text'" id="id2">
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                      [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+              </mat-form-field>
+          </div>
+      </div> -->
+      <button mat-raised-button color="accent" class="btn" type="submit">Save</button>
+  </div>
+  
+  </form>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

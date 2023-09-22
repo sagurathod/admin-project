@@ -14,3 +14,22 @@
   .example-sidenav {
     padding: 20px;
   }
+
+  .cursor .cursor{
+    cursor: pointer;
+  }
+  
+  .active{
+    background-color: rgba(196, 255, 197, 0.404) !important;
+    border-left : 4px solid rgb(0, 136, 36);
+  }
+
+  ::ng-deep .mdc-list-item__primary-text{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+
+  .person-icon{
+    text-align: center;
+    font-size: 42px;
+  }

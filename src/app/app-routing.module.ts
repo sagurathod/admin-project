@@ -8,7 +8,8 @@ const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
   {path:'login', component:LoginComponent},
   {path:'dashboard', component:DashboardComponent},
-  {path:'home', component:HomeComponent}
+  {path:'home', component:HomeComponent},
+  { path: 'categories', loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule) }
 ];
 
 @NgModule({

@@ -16,13 +16,34 @@
 
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
-        <mat-list role="list">
-            <mat-list-item role="listitem">Dashboard</mat-list-item>
-            <mat-list-item role="listitem">Categories</mat-list-item>
-            <mat-list-item role="listitem">Products</mat-list-item>
-            <mat-list-item role="listitem">Orders</mat-list-item>
-            <mat-list-item role="listitem">Users</mat-list-item>
-            <mat-list-item role="listitem">Newsletters</mat-list-item>
+        <p class="person-icon"><span class="material-symbols-outlined person-icon">
+                person
+            </span></p>
+        <mat-list role="list" class="cursor">
+            <mat-list-item role="listitem" class="cursor" routerLink="/dashboard" routerLinkActive="active"><span class="material-symbols-outlined">
+                dashboard
+                </span> 
+                Dashboard</mat-list-item>
+            <mat-list-item role="listitem" class="cursor" routerLink="/categories/main-category" routerLinkActive="active"><span class="material-symbols-outlined">
+                category
+                </span> 
+                Categories</mat-list-item>
+            <mat-list-item role="listitem" class="cursor" routerLinkActive="active"><span class="material-symbols-outlined">
+                production_quantity_limits
+                </span>
+                 Products</mat-list-item>
+            <mat-list-item role="listitem" class="cursor" routerLinkActive="active"><span class="material-symbols-outlined">
+                order_approve
+                </span>
+                 Orders</mat-list-item>
+            <mat-list-item role="listitem" class="cursor" routerLinkActive="active"><span class="material-symbols-outlined">
+                account_circle
+                </span>
+                 Users</mat-list-item>
+            <mat-list-item role="listitem" class="cursor" routerLinkActive="active"><span class="material-symbols-outlined">
+                stacked_email
+                </span>
+                 Newsletters</mat-list-item>
           </mat-list>
     </mat-drawer>
   
@@ -30,6 +51,7 @@
       <!-- <button type="button" mat-button>
         Toggle sidenav
       </button> -->
+      <router-outlet></router-outlet>
     </div>
   
   </mat-drawer-container>
