@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   showFiller = false;
+  ex:Example=new Example();
 }
+class Example{
+  data!:number;
+}
+
